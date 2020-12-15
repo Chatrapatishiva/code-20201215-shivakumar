@@ -1,0 +1,31 @@
+{
+  "name": "readcsv",
+  "version": "1.0.0",
+  "description": "read csv file",
+  "main": "src/index.ts",
+  "scripts": {
+    "prebuild": "tslint -c tslint.json -p tsconfig.json --fix",
+    "build": "tsc  --project ./",
+    "prestart": "npm run build",
+    "start": "nodemon index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Shivakumar A",
+  "license": "ISC",
+  "dependencies": {
+    "@types/express": "^4.17.9",
+    "@types/request": "^2.48.5",
+    "body-parser": "^1.19.0",
+    "csv-parser": "^3.0.0",
+    "express": "^4.17.1",
+    "request": "^2.88.2",
+    "scramjet": "^4.35.9"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.13",
+    "ts-node": "^9.1.1",
+    "tslint": "^6.1.3",
+    "typescript": "3.9.5"
+
+  }
+}
